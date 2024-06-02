@@ -19,7 +19,7 @@ Route::get('/mentor', function () {
   return view('pages.mentors.index');
 })->name('mentor.index');
 
-Route::get('/mentor', function () {
+Route::get('/mentor2', function () {
   return view('pages.mentors.index2');
 })->name('mentor2.index');
 
@@ -42,3 +42,7 @@ Route::get('/branch', function () {
 Route::get('/order', function () {
   return view('pages.order.index');
 })->name('order.index');
+
+Route::get('/schedule', function () {
+  return view('pages.schedule.index');
+})->name('schedule.index');

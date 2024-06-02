@@ -30,12 +30,15 @@
                 <div class="text-truncate">Customer</div>
             </a>
         </li>
+
         <li class="menu-item ">
             <a href="{{ route('admin.mentor.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user"></i>
                 <div class="text-truncate">Mentor</div>
             </a>
         </li>
+
+
         {{-- <li class="menu-item ">
             <a href="{{ route('admin.package.index') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
@@ -105,19 +108,25 @@
         </li>
 
 
+        <li class="menu-item ">
+            <a href="{{ route('admin.schedule.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-calendar"></i>
+                <div class="text-truncate">Schedule</div>
+            </a>
+        </li>
 
 
-        @foreach ($menuData[0]->menu as $menu)
-            {{-- adding active and open class if child is active --}}
+        {{-- @foreach ($menuData[0]->menu as $menu) --}}
+        {{-- adding active and open class if child is active --}}
 
-            {{-- menu headers --}}
-            @if (isset($menu->menuHeader))
-                <li class="menu-header small text-uppercase">
+        {{-- menu headers --}}
+        {{-- @if (isset($menu->menuHeader)) --}}
+        {{-- <li class="menu-header small text-uppercase">
                     <span class="menu-header-text">{{ __($menu->menuHeader) }}</span>
-                </li>
-            @else
-                {{-- active menu method --}}
-                @php
+                </li> --}}
+        {{-- @else --}}
+        {{-- active menu method --}}
+        {{-- @php
                     $activeClass = null;
                     $currentRouteName = Route::currentRouteName();
 
@@ -139,10 +148,10 @@
                             }
                         }
                     }
-                @endphp
+                @endphp --}}
 
-                {{-- main menu --}}
-                <li class="menu-item {{ $activeClass }}">
+        {{-- main menu --}}
+        {{-- <li class="menu-item {{ $activeClass }}">
                     <a href="{{ isset($menu->url) ? url($menu->url) : 'javascript:void(0);' }}"
                         class="{{ isset($menu->submenu) ? 'menu-link menu-toggle' : 'menu-link' }}"
                         @if (isset($menu->target) and !empty($menu->target)) target="_blank" @endif>
@@ -154,14 +163,14 @@
                             <div class="badge bg-{{ $menu->badge[0] }} rounded-pill ms-auto">{{ $menu->badge[1] }}</div>
                         @endisset
                     </a>
-
-                    {{-- submenu --}}
-                    @isset($menu->submenu)
+ --}}
+        {{-- submenu --}}
+        {{-- @isset($menu->submenu)
                         @include('layouts.sections.menu.submenu', ['menu' => $menu->submenu])
                     @endisset
                 </li>
             @endif
-        @endforeach
+        @endforeach --}}
     </ul>
 
 </aside>
