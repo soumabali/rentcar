@@ -22,7 +22,7 @@
     <!-- Users List Table -->
     <div class="card">
         <div class="card-header">
-            <h5 class="card-title mb-0">Customer Management</h5>
+            <h5 class="card-title mb-0">Mentor Management</h5>
             <button class="btn btn-primary" style="float: right" data-repeater-create data-id="" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasAddUser">
                 <i class="bx bx-plus me-1"></i>
@@ -115,7 +115,7 @@
         <!-- Offcanvas to add new user -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser" aria-labelledby="offcanvasAddUserLabel">
             <div class="offcanvas-header">
-                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Add User</h5>
+                <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Add Mentor</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body mx-0 flex-grow-0">

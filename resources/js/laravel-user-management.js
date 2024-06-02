@@ -346,6 +346,7 @@ $(function () {
 
   // Delete Record
   $(document).on('click', '.delete-record', function () {
+    alert('delete');
     var user_id = $(this).data('id'),
       dtrModal = $('.dtr-bs-modal.show');
 
